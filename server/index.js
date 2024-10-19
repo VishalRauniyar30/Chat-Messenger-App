@@ -11,12 +11,12 @@ const app = express()
 
 const PORT = process.env.PORT || 5000
 
-const accountSid = 'AC6c1584e4cdfcb49b53486b94687fbba6'
-const authToken = '675f14f9790a93e165f9215cd57b1fdb'
-const messagingServiceSid = 'MGc5f0fd043d0107fc42c4c051cb82472a'
-// const accountSid = process.env.TWILIO_ACCOUNT_SID
-// const authToken = process.env.TWILIO_AUTH_TOKEN
-// const messagingServiceSid = process.env.TWILIO_MESSAGING_SERVICE_SID
+// const accountSid = 'AC6c1584e4cdfcb49b53486b94687fbba6'
+// const authToken = '675f14f9790a93e165f9215cd57b1fdb'
+// const messagingServiceSid = 'MGc5f0fd043d0107fc42c4c051cb82472a'
+const accountSid = process.env.TWILIO_ACCOUNT_SID
+const authToken = process.env.TWILIO_AUTH_TOKEN
+const messagingServiceSid = process.env.TWILIO_MESSAGING_SERVICE_SID
 
 const twilioClient = twilio(accountSid, authToken)
 

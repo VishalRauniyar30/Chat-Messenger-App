@@ -6,12 +6,12 @@ import dotenv from 'dotenv'
 
 dotenv.config()
 
-const api_key = 'vp8f747k5396'
-const api_secret = 'g4zmtgr9zakf2285uj6xrd6mchsyygbqtnavh9mm52qe9vv27x5as2xded2qxsbf'
-const app_id = '1339885'
-// const api_key = process.env.STREAM_API_KEY
-// const api_secret = process.env.STREAM_API_SECRET
-// const app_id = process.env.STREAM_APP_ID
+// const api_key = 'vp8f747k5396'
+// const api_secret = 'g4zmtgr9zakf2285uj6xrd6mchsyygbqtnavh9mm52qe9vv27x5as2xded2qxsbf'
+// const app_id = '1339885'
+const api_key = process.env.STREAM_API_KEY
+const api_secret = process.env.STREAM_API_SECRET
+const app_id = process.env.STREAM_APP_ID
 
 export const signIn = async(req, res) => {
     try {
